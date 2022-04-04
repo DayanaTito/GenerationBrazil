@@ -14,7 +14,7 @@ public class ExRep03 {
 		int i = 0;
 		int m = 0;
 		
-		while(idade<=99) {
+		while(idade != 99) {
 			System.out.println("Digite a sua idade: ");
 			idade = entrada.nextInt();
 			
