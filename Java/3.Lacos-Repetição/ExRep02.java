@@ -26,7 +26,7 @@ public class ExRep02 {
 		}
 		entrada.close();
 		System.out.println(x +" número são ímpares. ");
-		System.out.println(p +" número são ímpares. ");
+		System.out.println(p +" número são pares. ");
 	}
 
 }
