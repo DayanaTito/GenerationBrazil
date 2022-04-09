@@ -31,11 +31,12 @@ public class ExLoja {
 					System.out.println("Lista de Produtos: " + produtos);
 			}
 			else if(r == 2){
-					
-					for(int i = 0; i< produtos.size(); i ++) {
-						System.out.println((i + 1) + " " + produtos.get(i));
-					}
-					System.out.println("Digite o código do produto: ");
+				System.out.println("==========| Lista de Produtos |==========");
+				for(int i = 0; i< produtos.size(); i ++) {
+					System.out.println((i + 1) + " - " + produtos.get(i));
+				}
+				System.out.println("=========================================");
+					System.out.print("Digite o código do produto: ");
 					int rProduto = entrada.nextInt();
 					produtos.remove(rProduto - 1);
 					System.out.println("\nLista de produtos: " + produtos);
@@ -44,13 +45,7 @@ public class ExLoja {
 				System.out.println("Opção inválida");
 			}
 		
-	
-			
-			
 			}
-			
-
-
 	}
 	
 
