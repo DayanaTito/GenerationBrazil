@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class ExLoja {
 
 	
-		public static void main(String[] args) {
+	public static void main(String[] args) {
 
 
 			String p1 ="Celular";
@@ -32,7 +32,6 @@ public class ExLoja {
 			else if(r == 2){
 					System.out.println("Qual produto você gostaria de remover:");
 					int quantidade = produtos.size();
-				//	System.out.println(quantidade);
 					for(int i = 0; i< quantidade; i ++) {
 						System.out.println((i + 1) +produtos.get(i));
 					}
