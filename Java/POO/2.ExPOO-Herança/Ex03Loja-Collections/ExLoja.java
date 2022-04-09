@@ -8,6 +8,7 @@ public class ExLoja {
 	
 	public static void main(String[] args) {
 
+			Scanner entrada = new Scanner(System.in);
 
 			String p1 ="Celular";
 			String p2 = "Televisão";
@@ -18,34 +19,32 @@ public class ExLoja {
 			produtos.add(p2);
 			produtos.add(p3);
 			
-			System.out.println("Lista de produtos: = "+ produtos);
+			System.out.println("Lista de produtos: "+ produtos);
 			
-			Scanner leia = new Scanner(System.in);
-			System.out.println("Voce deseja adicionar ou remover?" + "\n1 - Adicionar"+ " \n2 - Remover");
-			int r= leia.nextInt();
+			System.out.println("Escolha uma opção: " + "\n1 - Adicionar"+ " \n2 - Remover");
+			int r= entrada.nextInt();
 			
 			if(r == 1){
-					System.out.println("Nome do produto: ");
-					String produto = leia.next();
+					System.out.print("Digite o nome no produto: ");
+					String produto = entrada.next();
 					produtos.add(produto);
+					System.out.println("Lista de Produtos: " + produtos);
 			}
 			else if(r == 2){
-					System.out.println("Qual produto você gostaria de remover:");
-					int quantidade = produtos.size();
-					for(int i = 0; i< quantidade; i ++) {
-						System.out.println((i + 1) +produtos.get(i));
+					
+					for(int i = 0; i< produtos.size(); i ++) {
+						System.out.println((i + 1) + " " + produtos.get(i));
 					}
-					System.out.println("Digite o número correspondente ao produto: ");
-					int rProduto = leia.nextInt();
+					System.out.println("Digite o código do produto: ");
+					int rProduto = entrada.nextInt();
 					produtos.remove(rProduto - 1);
-					System.out.println();
-					System.out.println("A nova lista é: " + produtos);
+					System.out.println("\nLista de produtos: " + produtos);
 			}
 			else { 
 				System.out.println("Opção inválida");
 			}
-			Collections.sort(produtos);
-			System.out.println("Produtos" + produtos);
+		
+	
 			
 			
 			}
